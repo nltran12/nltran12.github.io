@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nancy Tran | Portfolio</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Custom style -->
+        <link href="styles.css" rel="stylesheet"/>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Navigation Bar-->
+            <nav class="navbar fixed-top navbar-light navbar-expand-sm" style="background-color:#ffffff">
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" id ="nav-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Toggler/collapsibe Button -->
+                    <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
+                        <li class="nav-item"></span><a class="nav-link" id="home-nav" href="index.html" aria-label="home">home</a></li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="assignments-dropdown" data-toggle="dropdown" aria-label="assignment drop down">assignments</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="coming-soon.html" id="a2-nav" aria-label="assignment 2">assignment 2</a>
+                                <a class="dropdown-item" href="coming-soon.html" id="a3-nav" aria-label="assignment 3">assignment 3</a>
+                                <a class="dropdown-item" href="coming-soon.html" id="a4-nav" aria-label="assignment 4">assignment 4</a>
+                                <a class="dropdown-item" href="coming-soon.html" id="a5-nav" aria-label="assignment 5">assignment 5</a>
+                            </div>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item"><a class="nav-link" href="coming-soon.html" id="project-nav" aria-label="project">project </a></li>
+                        <li class="nav-item"><a class="nav-link" href="coming-soon.html" id="resume-nav" aria-label="resume">resume</a></li>
+                    </ul>
+                </nav>
+                <!-- Navigation Bar -->
+            <h1 class="coming-soon-text">Page coming soon</h1>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="container text-muted footer-text text-center">
+                <div class="contacts">
+                    <a href="mailto:nancyltran@outlook.com" aria-label="email-icon"><i class="fas fa-envelope footer-icon" alt="email"></i></a>
+                    <a href="https://www.linkedin.com/in/nltran/" aria-label="linkedin-icon"><i class="fab fa-linkedin footer-icon" alt="linkedin"></i></a>
+                    <a href="https://github.com/nltran12" aria-label="github-icon"><i class="fab fa-github footer-icon" alt="github"></i></a>
+                </div> 
+                <p>Designed and made by Nancy Tran, 2019</p>
+            </div>
+        </footer>
+        <!-- Footer -->
+        <!-- Javascript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+                let button = document.querySelector("button");
+                button.addEventListener("click", () => {
+                    console.log("Nav-toggler clicked.");
+                });         
+                document.getElementById("home-nav").addEventListener("click", () => {
+                    console.log("home-nav clicked.");
+                });
+                document.getElementById("assignments-dropdown").addEventListener("click", () => {
+                    console.log("assignments-dropdown clicked.");
+                });
+                document.getElementById("a2-nav").addEventListener("click", () => {
+                    console.log("a2-nav clicked.");
+                });
+                document.getElementById("a3-nav").addEventListener("click", () => {
+                    console.log("a3-nav clicked.");
+                });
+                document.getElementById("a4-nav").addEventListener("click", () => {
+                    console.log("a4-nav clicked.");
+                });
+                document.getElementById("a5-nav").addEventListener("click", () => {
+                    console.log("a5-nav clicked.");
+                });
+                document.getElementById("project-nav").addEventListener("click", () => {
+                    console.log("project-nav clicked.");
+                });
+                document.getElementById("resume-nav").addEventListener("click", () => {
+                    console.log("resume-nav clicked.");
+                });
+            </script>
+            <!-- Javascript -->
+    </body>
+</html>
