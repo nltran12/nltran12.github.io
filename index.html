@@ -32,7 +32,6 @@
                 </div>
             </li>
             <!-- Dropdown -->
-            <li class="nav-item"><a class="nav-link" href="coming-soon.html" id="resume-nav" aria-label="resume">resume</a></li>
         </ul>
     </nav>
     <!-- Navigation Bar -->
@@ -48,28 +47,53 @@
         <!-- Hero Image -->
         <div class="container">
             <!-- About -->
-            <div class="top-padding" id="about-me">    
+            <div class="top-padding" id="about-me">   
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col">
                         <h3 class="section-title" >about</h3>
-                        <img src="images/about-me.jpg" alt="self-portrait, woman"  class="img-fluid mx-auto d-block">
-                    </div>
-                    <div class="col-lg-9">
-                        <br></br>
-                        <p> Hi, my name is Nancy Tran. I'm a student at Northeastern University-Seattle, where I am pursuing
-                            a Master's in Computer Science-Align. What's unique about that Align program is that it's catered
-                            for students who had previously studied a different subject. Previously, I received my Bachelor's of Science 
-                            in Biochemistry at Bates College. You can check out 
-                            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5458767/">this publication,</a>
-                            containing part of my thesis. After undergrad, I had intended to go into biomedical research, which led me to spend 2 years
-                            at the University of Washington researching genes involved in hair cell regeneration in zebrafish. In the mist of finding out that
-                            the pace of research wasn't for me, I also discovered my joy in computer programming. This has brought me where I am today.
-                        </p>
-                        <p>This website is a portfolio of my coursework for CS7580: Special Topics in Software Engineering at
-                            Northeastern University-Seattle.
-                        </p> 
                     </div>
                 </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-3">
+                        <img src="images/about-me.jpg" alt="self-portrait, woman"  class="img-fluid mx-auto d-block">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="intro-text"> Hi, I'm Nancy Tran. Thanks for checking out my website! I was once fascinated with
+                            solving large, complex problems with little zebrafish, pipettes, microscopes, and agarose gels 
+                            (you can check out a bit of my work <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5458767/">here</a>).
+                            Now I look forward to solving problems using computers.
+                        </p>
+                    </div>
+                </div>
+                <!-- Resume Detail -->
+                <div class="row justify-content-md-center detail-text">
+                    <div class="col-xs-12 col-sm-12 col-lg-4">
+                        <div class="text-center"><i class="fas fa-graduation-cap"></i></div>
+                        <h2 class="text-center">Education</h2>
+                        <ul>
+                            <li>M.Sc. in Computer Science from Northeastern University, Seattle (expected 2021)</li>
+                            <li>B.S. in Biological Chemistry from Bates College, Lewiston, ME (2016)</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-4">
+                            <div class="text-center"><i class="fas fa-briefcase"></i></div>
+                            <h2 class="text-center">Work</h2>
+                            <ul>
+                                <li>Graduate Teaching Assistant at Northeastern University, Seattle (2019-present)</li>
+                                <li>Teacher at Computing Kids (2018-present)</li>
+                                <li>Assistant Research Scientist at University of Washington (2016-2018)</li>
+                            </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-4">
+                            <div class="text-center"><i class="fas fa-laptop-code"></i></div>
+                            <h2 class="text-center">Skills</h2>
+                            <ul>
+                                <li>Languages: Python, Java, C, Javascript, HTML, CSS</li>
+                                <li>Frameworks: React, Bootstrap</li>
+                            </ul>
+                    </div>
+                </div>
+                <!-- Resume Detail -->
             </div>
             <!-- About -->
             <!-- Projects -->
@@ -78,22 +102,38 @@
                     <h3 class="section-title">projects</h3>
                     </div>
                 </div>
+                <!-- Trivia -->
                 <div class="row justify-content-md-center"> 
-                     <div class="col">
+                     <div class="col col-lg-5">
                             <h4 class="projects-title">Trivia</h4>
-                            <p>I built a trivia app using React.</p>
+                            <ul>
+                                <li>Built a trivia app using ReactJS, Reactstrap, Redux, and CSS.</li>
+                                <li>Allows user to customize number of questions, difficulty, and category.</li>
+                                <li>Fetches appropriate data from API according to user preferences.</li>
+                                <li>Implemented two game modes, where player can play solo or against a computer.</li>
+                                <li>Completed project for Special Topics in Software Engineering (UI) at Northeastern University, Seattle in Summer 2019</li>
+                                <li>Play the app <a href="https://pages.github.ccs.neu.edu/cs7580su19-seattle/Student_Repo_Nancy_Tran/builds/assignment3/">here.</a></li>
+                            </ul>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-lg-3 img-padding" ><img src="images/trivia-home.jpg" alt="Trivia game homepage" class="border" style="width:100%;height:100%"/></div>
-                    <div class="col-xs-6 col-sm-6 col-lg-3 img-padding"><img src="images/trivia-gameover.jpg" alt="Trivia game over page" class="border" style="width:100%;height:100%"/></div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 img-padding" ><img src="images/trivia-home.jpg" alt="Trivia game homepage" class="border" style="width:100%"/></div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 img-padding"><img src="images/trivia-gameover.jpg" alt="Trivia game over page" class="border" style="width:100%"/></div>
                 </div>
+                <!-- Trivia -->
+                <!-- Othello -->
                 <div class="row top-padding justify-content-md-center" id="othello"> 
-                        <div class="col">
+                        <div class="col col-lg-5">
                                <h4 class="projects-title">Othello</h4>
-                               <p>I built an othello game using Python and Processing. </p>
+                               <ul>
+                                   <li>Built a play-able othello game using python and Processing</li>
+                                   <li>Implemented a computer that often beats novice players by strategically placing its next move.</li>
+                                   <li>Records player's name and maintains high scores.</li>
+                                   <li>Completed project for Intensive Foundations of Computer Programming at Northeastern University, Seattle in Fall 2018</li>
+                               </ul>
                        </div>
-                       <div class="col-xs-6 col-sm-6 col-lg-3 img-padding" ><img src="images/othello-start.jpg" alt="othello game start" class="border" style="width:100%;height:100%"/></div>
-                       <div class="col-xs-6 col-sm-6 col-lg-3 img-padding"><img src="images/othello-end.jpg" alt="othello game end" class="border" style="width:100%;height:100%"/></div>
+                       <div class="col-xs-6 col-sm-6 col-lg-3 img-padding" ><img src="images/othello-start.jpg" alt="othello game start" class="border" style="width:100%"/></div>
+                       <div class="col-xs-6 col-sm-6 col-lg-3 img-padding"><img src="images/othello-end.jpg" alt="othello game end" class="border" style="width:100%"/></div>
                 </div>
+                <!-- Othello -->
             <!-- Projects -->
         </div>
         <!-- Footer -->

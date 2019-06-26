@@ -20,17 +20,31 @@ h1 {
     letter-spacing: 10px;
 }
 
+h2 {
+    color:#70706f;
+    font-size: 30px;
+}
+
 h3 {
     color: #445529;
     font-size: 35px;
     font-family: 'Playfair Display', serif;
     letter-spacing: 10px;
     padding-bottom: 20px;
+    font-weight: bolder;
 }
 
 h4 {
     color:#78573e;
     font-size: 30px;
+    font-weight: 500;
+}
+
+i {
+    font-size: 4em;
+    color:#70706f;
+    padding-bottom: 10px;
+    align-self: center;
 }
 
 a {
@@ -53,23 +67,6 @@ a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
-  }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 130px;
-    box-shadow: 0;
-    z-index: 1;
-    text-align: center;
-  }
-
-.dropdown-content a {
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
 }
 
 .top-padding {
@@ -77,7 +74,18 @@ a:hover {
 }
 
 .img-padding {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.detail-text {
+    padding-top: 2em;
+}
+
+.intro-text {
+    font-size: 1.25em;
+    font-weight: 100;
+    padding-top: 20px;
 }
 
 .page-footer {
