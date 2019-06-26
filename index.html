@@ -12,41 +12,46 @@
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    </head>
-    <body>
+    </head>    
+    <!-- Navigation Bar-->
+    <nav class="navbar fixed-top navbar-light navbar-expand-sm" style="background-color:#ffffff" id="nav">
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" id ="nav-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Toggler/collapsibe Button -->
+        <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
+            <li class="nav-item"></span><a class="nav-link" id="home-nav" href="#tophome" aria-label="home">home</a></li>
+            <li class="nav-item"></span><a class="nav-link" id="about-me-nav" href="#about-me" aria-label="about">about</a></li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="work-dropdown" data-toggle="dropdown" aria-label="projects dropdown">projects</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#projects" id="trivia-nav" aria-label="trivia app">Trivia Game</a>
+                    <a class="dropdown-item" href="#othello" id="othello-nav" aria-label="othello game">Othello</a>
+                </div>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item"><a class="nav-link" href="coming-soon.html" id="resume-nav" aria-label="resume">resume</a></li>
+        </ul>
+    </nav>
+    <!-- Navigation Bar -->
+    <body data-spy="scroll" data-target="#nav" data-offset="100">
+        <!-- Hero image -->
+        <div class="hero-image row" id="tophome">
+            <div class="col"> 
+                <div class="hero-text">
+                    <h1 class="title text-highlight font-weight-bolder"><span>Nancy Tran</span></h1>
+                </div>
+            </div>
+        </div> 
+        <!-- Hero Image -->
         <div class="container">
-            <h1 class="title text-highlight font-weight-bolder">Nancy Tran</h1>
-            <h2 class="subtitle text-highlight">a portfolio of a biological scientist turned computer scientist</h2>
-            <!-- Navigation Bar-->
-            <nav class="navbar fixed-top navbar-light navbar-expand-sm" style="background-color:#ffffff">
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" id ="nav-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Toggler/collapsibe Button -->
-                <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
-                    <li class="nav-item"></span><a class="nav-link active" id="home-nav" href="index.html" aria-label="home">home</a></li>
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="assignments-dropdown" data-toggle="dropdown" aria-label="assignment drop down">assignments</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="coming-soon.html" id="a2-nav" aria-label="assignment 2">assignment 2</a>
-                            <a class="dropdown-item" href="coming-soon.html" id="a3-nav" aria-label="assignment 3">assignment 3</a>
-                            <a class="dropdown-item" href="coming-soon.html" id="a4-nav" aria-label="assignment 4">assignment 4</a>
-                            <a class="dropdown-item" href="coming-soon.html" id="a5-nav" aria-label="assignment 5">assignment 5</a>
-                        </div>
-                    </li>
-                    <!-- Dropdown -->
-                    <li class="nav-item"><a class="nav-link" href="coming-soon.html" id="project-nav" aria-label="project">project </a></li>
-                    <li class="nav-item"><a class="nav-link" href="coming-soon.html" id="resume-nav" aria-label="resume">resume</a></li>
-                </ul>
-            </nav>
-            <!-- Navigation Bar -->
             <!-- About -->
-            <div class="about-me">    
+            <div class="top-padding" id="about-me">    
                 <div class="row">
                     <div class="col-lg-3">
-                        <h3 class="section-title">about</h3>
+                        <h3 class="section-title" >about</h3>
                         <img src="images/about-me.jpg" alt="self-portrait, woman"  class="img-fluid mx-auto d-block">
                     </div>
                     <div class="col-lg-9">
@@ -67,6 +72,29 @@
                 </div>
             </div>
             <!-- About -->
+            <!-- Projects -->
+                <div class="row" id="projects">
+                    <div class="col">
+                    <h3 class="section-title">projects</h3>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center"> 
+                     <div class="col">
+                            <h4 class="projects-title">Trivia</h4>
+                            <p>I built a trivia app using React.</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 img-padding" ><img src="images/trivia-home.jpg" alt="Trivia game homepage" class="border" style="width:100%;height:100%"/></div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 img-padding"><img src="images/trivia-gameover.jpg" alt="Trivia game over page" class="border" style="width:100%;height:100%"/></div>
+                </div>
+                <div class="row top-padding justify-content-md-center" id="othello"> 
+                        <div class="col">
+                               <h4 class="projects-title">Othello</h4>
+                               <p>I built an othello game using Python and Processing. </p>
+                       </div>
+                       <div class="col-xs-6 col-sm-6 col-lg-3 img-padding" ><img src="images/othello-start.jpg" alt="othello game start" class="border" style="width:100%;height:100%"/></div>
+                       <div class="col-xs-6 col-sm-6 col-lg-3 img-padding"><img src="images/othello-end.jpg" alt="othello game end" class="border" style="width:100%;height:100%"/></div>
+                </div>
+            <!-- Projects -->
         </div>
         <!-- Footer -->
         <footer class="page-footer">
