@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     </head>    
     <!-- Navigation Bar-->
-    <nav class="navbar fixed-top navbar-light navbar-expand-sm" style="background-color:#ffffff" id="nav">
+    <nav class="navbar fixed-top navbar-light navbar-expand-sm fade-in" style="background-color:#ffffff" id="nav">
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" id ="nav-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,8 +38,8 @@
     <body data-spy="scroll" data-target="#nav" data-offset="100">
         <div class="container-fluid">
             <!-- Hero image -->
-            <div class="jumbotron jumbotron-fluid" id="tophome">
-                <div class="hero-text">
+            <div class="jumbotron jumbotron-fluid fade-in" id="tophome">
+                <div class="hero-text fade-in">
                     <h1 class="title text-highlight font-weight-bolder"><span>Nancy Tran</span></h1>
                 </div>
             </div> 
@@ -47,7 +47,7 @@
         </div>
         <div class="container">
             <!-- About -->
-            <div class="top-padding" id="about-me">   
+            <div class="top-padding" data-aos="fade-up" id="about-me">   
                 <div class="row">
                     <div class="col">
                         <h3 class="section-title" >about</h3>
@@ -152,36 +152,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script>
-            let button = document.querySelector("button");
-            button.addEventListener("click", () => {
-                console.log("Nav-toggler clicked.");
-            });         
-            document.getElementById("home-nav").addEventListener("click", () => {
-                console.log("home-nav clicked.");
-            });
-            document.getElementById("assignments-dropdown").addEventListener("click", () => {
-                console.log("assignments-dropdown clicked.");
-            });
-            document.getElementById("a2-nav").addEventListener("click", () => {
-                console.log("a2-nav clicked.");
-            });
-            document.getElementById("a3-nav").addEventListener("click", () => {
-                console.log("a3-nav clicked.");
-            });
-            document.getElementById("a4-nav").addEventListener("click", () => {
-                console.log("a4-nav clicked.");
-            });
-            document.getElementById("a5-nav").addEventListener("click", () => {
-                console.log("a5-nav clicked.");
-            });
-            document.getElementById("project-nav").addEventListener("click", () => {
-                console.log("project-nav clicked.");
-            });
-            document.getElementById("resume-nav").addEventListener("click", () => {
-                console.log("resume-nav clicked.");
-            });
-        </script>
         <!-- Javascript -->
     </body>
 

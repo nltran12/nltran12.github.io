@@ -56,6 +56,8 @@ a:hover {
     text-decoration: none;
 }
 
+/* NAVBAR */
+
 .navbar {
     border-bottom:2px solid #edeceb;
 }
@@ -68,6 +70,8 @@ a:hover {
     position: relative;
     display: inline-block;
 }
+
+/* SECTIONS */
 
 .top-padding {
     padding-top: 60px;
@@ -88,6 +92,8 @@ a:hover {
     padding-top: 20px;
 }
 
+/* FOOTER */
+
 .page-footer {
     border-top: 2px solid #edeceb;
     position: relative;
@@ -101,16 +107,14 @@ a:hover {
     padding-top: 5px;
 }
 
-.coming-soon-text {
-    padding-top: 90px;
-}
-
 .footer-icon {
     color: #00000098;
     font-size: 30px;
     padding-left: 10px;
     padding-right: 10px;
 }
+
+/* HEADER/JUMBOTRON */
 
 .jumbotron {
     background: url("images/header.jpg") no-repeat;
@@ -130,4 +134,29 @@ span {
 
 .hero-text {
     margin-top: 220px;
+}
+
+/* ANIMATION */
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+
+  20% {
+      opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 1.5s;
 }
